@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>RMCL on Web</title>
+    <script>
+        window.onload = function() {
+            var newWindow = window.open('https://b.mc.js.cool', '_blank', 'width=600, height=400');
+            if (newWindow) {
+                newWindow.focus();
+                window.close(); // 关闭原始的父窗口
+            } else {
+                alert('弹窗被浏览器拦截了，请检查浏览器设置');
+            }
+        };
+    </script>
+</head>
+<body>
+    <!-- 这里不需要按钮，页面加载完成后会自动打开新窗口 -->
+</body>
+</html>
